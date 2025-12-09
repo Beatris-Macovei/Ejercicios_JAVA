@@ -6,9 +6,37 @@ public class Lagrima
   private double duracion=3.3;
   private boolean esFelicidad;
   //Constructor
-  
+  public Lagrima()
+  {
+    this.salinidad = salinidad;
+    this.volumen = volumen;
+    this.duracion = duracion;
+    this.esFelicidad = esFelicidad;
+  }
   
   //METODOS duracion, volumen, salinidad, esFelicidad
+  public double cuantaSal()
+  {
+    if(salinidad<5)
+    {
+      System.out.println("Salanidad normal");
+    }
+    else
+    {
+      System.out.println("Demasiada sal!");
+    }
+  }
+  public double suVolumen()
+  {
+    if()
+    {
+      
+    }
+  }
+  public double tiempo()
+  {
+    
+  }
   public boolean esFelicida()
   {
     
