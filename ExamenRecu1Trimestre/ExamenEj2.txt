@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class ExamenEj2
+{
+    
+    public void canciones(String[] palabras, String grupo)
+    {
+        for(int i=0; i<palabras.length; i=i+2)
+        {
+            System.out.println(palabras[i]);
+        }
+        Scanner teclado = new Scanner(System.in);
+        int intentos = 1;
+        boolean hayAcierto = false;
+        while(intentos <= 3 && !hayAcierto)
+        {
+            System.out.print("Nombre del grupo?");
+            String respuesta = teclado.next();
+
+            if(respuesta.equals(grupo))
+            {
+                hayAcierto = true;
+                System.out.println("Acertaste!!!!");
+            }
+            intentos++;
+        }
+
+        if(intentos == 3)
+        {
+            System.out.println("El grupo era"+ grupo);
+        }
+    }
+}

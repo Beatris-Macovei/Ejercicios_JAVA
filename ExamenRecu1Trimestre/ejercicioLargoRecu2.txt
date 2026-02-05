@@ -1,0 +1,28 @@
+public class Biblioteca {
+
+	private Libro[] libros = new Libro[20];
+	
+	public Biblioteca(int tamaño)
+	{
+		this.libros = new Libro[tamaño]
+	}
+	
+	public void añadirLibro(Libro librito)
+	{
+	
+		boolean libroAñadido=false;
+		for(int i=0; i<libros.length && libroAñadido==false; i++)
+		{
+			if(libros[i]==null)
+			{
+				libros[i]=librito;
+				libroAñadido=true;
+			}
+		}
+	}
+	
+	public boolean eliminarPrimero()
+	public void eliminar(String titulo)
+	public void mostrarLibros(int calificacion)
+	public void mostrarTitulos()
+}

@@ -1,0 +1,47 @@
+UNA CLASE QUE UNICAMENTE TIENE UN METODO MAIN 
+USAR EL APRATADO A Y B (CLASE LIBRO Y BIBLIOTECA)
+Libro:tiene constructor con parametros ; set Calificacion---public boolean setCalificacion(int i).
+Biblioteca:contrucor con un entero ;metodo añadir libro ----public boolean añadirlibro(Libro l); elmimar el primer libor dentro de la bibliotecs y eleminar libros por titutlo
+
+pubicl class Libro
+{
+
+  public String getTitutlo(){       }
+/* -----creamos en la clase libro---*/
+  autaliza subiendo un 5% los tres libros que has creado ---se necesita un setPrtecio()
+  se cre en libro*/
+  public void setPrecio(double precio)
+  {
+    this.precio=precio;
+  }
+  /debueble el valor del atributo 
+  public double getPrecio(){
+    return this.precio;
+  }
+}
+
+//test
+//Libro caperuzita= new Libro("Caperucita","anonimo",30,8,7.0);
+double nuevoPrecio=caperucita.getPrecio()*1.05;
+caperuzita.setPrecio(nuevoPrecio);
+
+peterPan.setPrecio(peterPan.getPrecio()*1.05);
+elPrincipito.setPrecio(elprincipito.getPrecio()*1.05);
+
+
+muestra por pantalla del primer libro que creaste
+System.out.prittnl(capareuzita.getPrecio());
+//añadir libro 
+lili.añadirLibro(caperuzita);
+//añadir libro hasta que este llena la biblioteca si nose el tamaño es con while
+
+siempre que aplico un metodo ayado un objeto 
+while(lili.añadirLibro(new Libro("caparucita",50,...)==true;
+int i=0;
+//
+while (alejandria.añadiralaibro(new Libro("Titulo"+i,"Autor"+i,200,..)==true)
+{
+  i++
+}
+
+for((alejandria.añadiralaibro(new Libro("Titulo"+i,"Autor"+i,200,..);++i)

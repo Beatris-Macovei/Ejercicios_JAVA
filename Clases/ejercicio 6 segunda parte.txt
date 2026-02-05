@@ -1,0 +1,20 @@
+ejercicio 6 (segunda parte) examen
+
+public class TestTarjeta
+{
+	public static void main(String[]args)
+	{
+		Tarjeta t1 = new Tarjeta();
+		Tarjeta t2 = new Tarjeta();
+		Tarjeta t3 = new Tarjeta();
+		
+		//Pones el numero que quieras siempre que coincida, esto es para rellenar 
+		t1.rellenarTarjeta(2,3);
+		t2.rellenarTarjeta(6,2);
+		t3.rellenarTarjeta(7,5);
+		
+		//Imprime en pantalla el nombre asociado a una tarjeta(la segunda)
+		System.out.println(t2.getNombre());
+		
+	}
+}

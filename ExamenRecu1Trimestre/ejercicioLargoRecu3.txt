@@ -1,0 +1,52 @@
+/*UNA CLASE QUE UNICAMENTE TIENE UN METODO MAIN 
+USAR EL APRATADO A Y B (CLASE LIBRO Y BIBLIOTECA)
+Libro:tiene constructor con parametros ; set Calificacion---public boolean setCalificacion(int i).
+Biblioteca:contrucor con un entero ;metodo añadir libro ----public boolean añadirlibro(Libro l); elmimar el primer libor dentro de la bibliotecs y eleminar libros por titutlo
+*/
+public class Test {
+	public static void main (String[]arg) {
+		Libro caperuzita= new Libro("Caperucita","anonimo",30,8,7.0);
+		Libro piterPan = new Libro("Peter","anonimo",20,9,10.30);
+		Libro principito =new Libro("El principito","eeee",100,6,9.5);
+		
+		/*añadir cualquier metodo es con toString
+		 * en la clase Libro añadimos getLibro
+		 * public String getTitutlo(){
+		 * }*/
+		/*mostrar por pantalla*/
+		System.out.print(principito.getTitulo());
+		/*modifica la calificacion del libro que hemos creado*/
+		piterPan.setCalificacion(10);
+		/*si diria que muestre en pantalla si hace algo*/
+		if(piterPan.setCalificacion(10)==true) {
+			System.out.print("he podido");
+		}
+		else {
+			System.out.print("No he podido");
+		}
+		
+		/*-----convertirlo el if en ternario--------*/
+		
+		/*String mensaje= (piterPan.setCalificacion(10)?"He podido":"No puedo");
+		System.out.print(mensaje); */
+		
+		
+		/*-------crea una clase biblioteca------*/
+			Biblioteca lili =new Biblioteca(2500);
+			/*
+			su poniendo que no sabes cuantos hay muestra por pantalla cuantos libros crees que haya,
+			muestra titulos de libros*/
+			lili.mostrarTitulos();
+	/*----muestra los titulos cuya  calificacion sea mayor que 8*/
+			lili.mostrarLibros(8);
+	/*-----eliminar el primer libro que encuentre-----*/
+			boolean resultado=true;
+			while(resultado) {
+				resultado=lili.eliminarPrimero();
+			}
+			 
+			
+	}
+	
+
+}

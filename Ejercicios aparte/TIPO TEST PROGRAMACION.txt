@@ -1,0 +1,96 @@
+TIPO TEST PROGRAMACIÓN (REPASO MUY(NO) FÁCIL)
+
+ej 1.
+c
+ej 2.
+c
+ej 3.
+d
+ej 4.
+b
+ej 5.
+b
+ej 6.
+b
+ej 7.
+b
+ej 8.
+a
+
+ej 9.
+b
+ej 10.
+b
+ej 11.
+b
+ej 12.
+b
+
+ej 13. 
+b
+ej 14.
+a
+ej 15.
+a
+
+ej 16.
+a
+ej 17.
+b
+ej 18.
+b
+ej 19.
+b
+ej 20.
+a
+
+ej 21.
+a
+ej 22.
+a
+ej 23.
+a
+ej 24.
+a
+ej 25.
+a
+
+ej 26.
+a
+ej 27.
+a
+ej 28. 
+b
+
+ej 29.
+b
+ej 30.
+d
+ej 31.
+----
+ej 32.
+----------
+ej 33.
+a
+ej 34.
+a
+
+ej 35.
+-----------
+ej 36.
+a
+ej 37.
+c-----
+ej 38.
+----------
+ej 39.
+a
+ej 40.
+-----
+
+ej clase
+d) (2+3*7>2*10&&3!=10)?(2+f):(5.0f)
+
+
+
+

@@ -1,0 +1,39 @@
+public class Libro
+{
+	private String titulo;
+	private String autor;
+	private int numPags;
+	private int calificacion;
+	private double precio;
+	
+	public Libro(String t, String a, int n, int c, double p)
+	{
+		this.titulo=t;
+		this.autor=a;
+		this.numPags=n;
+		
+		if(c >= 0 && c <= 10)
+		{
+			this.calificacion=c;
+		}
+		else
+		{
+			System.out.println("Parametro calificacion fuera de rango, se le asignara 5 por --");
+			this.calificacion=5;
+		}
+		
+		// Equivalente con operador ternario
+		//this.calificacion=(c >= 0 && c <= 10)?c:5;
+	}
+	
+	public boolean setCalificacion(int calificacion)
+	{
+		boolean valorCorrecto = false;
+		if(c >= 0 && c <=10)
+		{
+			this.calificacion = c;
+			valorCorrecto = true;
+		}
+		return valorCorrecto;
+	}
+}
