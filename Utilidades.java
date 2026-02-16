@@ -7,10 +7,10 @@ public class Utilidades
     public void mostrarFechaAleatoria()
     {
         Random random = new Random();
-        int año = random.nextInt(2000, 2026);
+        int anio = random.nextInt(2000, 2026);
         int mes = random.nextInt(1, 12);
         int dia = random.nextInt(1, 30);
-        LocalDate fecha = LocalDate.of(año, mes, dia);
+        LocalDate fecha = LocalDate.of(anio, mes, dia);
         System.out.println(fecha.toString());
     }
 
@@ -49,10 +49,10 @@ public class Utilidades
 
     public boolean validar(String nif)
     {
-        String num;
+        String num = "";
         boolean valido = true;
         String letra;
-        char[] letras={"A","B","C","D","E","F"} //no es como el dni, invent
+        char[] letras={'T','R','W','A','G','M','Y','F','P','D','X','B','N','J','Z','S','Q','V','H','L','C','K','E'};
         if (nif.length()==9)
         {
             for(int i=0; i<=8; i++)
@@ -61,9 +61,17 @@ public class Utilidades
             }
             int asd = Integer.parseInt(num);
             int resto = asd % 23;
+
+            char letraCalculada = letras[resto];
+            char letraReal = nif.charAt(8);
+
+            return letraCalculada == letraReal;
+
         }
+
+        return false;
     }
 
 
 
-}
+} 
