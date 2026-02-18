@@ -1,0 +1,32 @@
+String equipo = "Ferrari";
+String nano = "Lamborguini";
+
+boolean coincide = equipo.equals(nano);
+
+o tmb
+
+if(equipo.equals(Aston Martin)) //No entra al if porque es false
+{
+
+}
+
+APIs
+
+LocalDate 
+Random
+
+Tokenizer
+
+    public String iniciales(String nombre)
+    {
+        String inicialess=null;
+        StringTokenizer st = new StringTokenizer(nombre, " ");
+        while (st.hasMoreTokens()) 
+        {
+            String palabra = st.nextToken();
+            inicialess += palabra.charAt(0);
+            inicialess = inicialess + ".";
+        }
+        return inicialess;
+
+    }
