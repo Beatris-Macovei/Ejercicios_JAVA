@@ -30,3 +30,123 @@ Tokenizer
         return inicialess;
 
     }
+
+String parrafo;
+StringTokenizer dividir = new StringTokenizer(parrafo, " ");
+int numero = dividir.countTokens();
+String[] palabra = new String[numero];
+int i=0;
+while(dividir.hasMoreTokens)
+{
+    palabra[i] = dividir.nextToken();
+    i++;
+}
+return palabra;
+
+String nif;
+boolean valido = true;
+
+if(nif != null && nif.lenght() == 9)
+{
+    String numeros = nif.substring(0,8);
+    for(int i=0; i<numeros.lenght(); i++)
+    {
+        char c = numeros.charAt(i);
+        if(c < 0 || c > 9)
+        {
+            valido = false;
+        }
+    }
+    if(valido)
+    {
+        char letra = nif.charAt(8);
+        String letrasValidas = "TRWAGMYFPDXBNJZSQVHLCKE";
+        int numero = Integer.parseInt(numeros);
+        int resto = numero % 23;
+        char letraCorrecta = letrasValidas.charAt(resto);
+        if(letra != letraCorrecta)
+        {
+            valido = false;
+        }
+    }
+    else
+    {
+        valido = false;
+    }
+    return valido;
+}
+
+
+String nif;
+boolean valido = true;
+
+if(nif != null && nif.lenght() == 9)
+{
+    String numeros = nif.substring(0,8);
+    for(int i=0; i < numeros.lenght(); i++)
+    {
+        char c = numeros.charAt(i);
+        if(c < 0 || c > 9)
+        {
+            valido = false;
+        }
+    }
+    if(valido)
+    {
+        char letra = nif.charAt(8);
+        String letrasValidas = "TRWAGMYFPDXBNJZSQVHLCKE";
+        int numero = Integer.parseInt(numeros);
+        int resto = numero % 23;
+        char letraCorrecta = letrasValidas(resto);
+
+        if(letra != letraCorrecta)
+        {
+            valido = false;
+        }
+    }
+    else 
+    {
+        valido = false;
+    }
+    return valido;
+}
+
+
+String parrafo;
+StringTokenizer dividir = new StringTokenizer("parrafo", " ");
+String numToken = dividir.countTokens();
+String[] resultado = new String[numToken];
+int i = 0;
+while(dividir.hasMoreTokens)
+{
+    resultado[i] = dividir.nextToken();
+    i++
+}
+return resultado;
+
+String nombre;
+StringTokenizer iniciales = new StringTokenizer("nombre", " ");
+while(iniciales.hasMoreTokens())
+{
+    String palabra = iniciales.nextToken();
+    iniciales = iniciales + palabra.charAt(0);
+    iniciales = iniciales + ".";
+}
+return iniciales;
+
+Random random = new Random();
+int año = random.nextInt(100,200);
+
+
+
+String parrafo;
+StringTokenizer dividir = new StringTokenizer("parrafo"+" ");
+String  numToken = dividir.countTokens();
+String[] resultado = new String[numToken];
+int i=0;
+while(dividir.hasMoreTokens())
+{
+    resultado[i] = dividir.nextToken();
+    i++
+}
+return resultado;
