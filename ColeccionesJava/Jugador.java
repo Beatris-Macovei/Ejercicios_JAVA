@@ -1,0 +1,13 @@
+public class Jugador
+{
+    private String nombre;
+    private int dorsal;
+
+    public Jugador(String nombre, int dorsal)
+    {
+        this.nombre = nombre;
+        this.dorsal = dorsal;
+    }
+
+    
+}
