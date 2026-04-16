@@ -1,3 +1,4 @@
+package COLECCIONES;
 public class Jugador
 {
     private String nombre;
@@ -7,6 +8,29 @@ public class Jugador
     {
         this.nombre = nombre;
         this.dorsal = dorsal;
+    }
+
+    public String getNombreJugador()
+    {
+        return nombre;
+    }
+
+    public int getDorsal()
+    {
+        return dorsal;
+    }
+
+    public boolean comprobar(Jugador j)
+    {
+        boolean comp=true;
+        if(nombre.equals(j))
+        {
+            return comp;
+        } 
+        else
+        {
+            return false;
+        }
     }
 
     
