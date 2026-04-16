@@ -16,6 +16,20 @@ public class Equipo
     {
         team.add(jugador);
     }
+
+    //poner nombre al equipo
+    public void setNombre()
+    {
+        this.nombreEquipo = nombreEquipo;
+    }
+
+    public String getNombre()
+    {
+        return nombreEquipo;
+    }
+
+    
+
 }
 
 
